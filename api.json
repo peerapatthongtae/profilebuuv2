@@ -1,0 +1,16 @@
+{"status":"true",
+    "result":
+    {
+        "Teacher_ID":"username",
+        "department":
+        [
+            {"Teacher_Prefix": "นาย",
+            "Teacher_Name_Th": "เอกภพ",
+            "Teacher_Lname_Th": "บุญเพ็ง",
+            "Teacher_Position": "อาจารย์",
+            "Teacher_Email": "aekapop@buu.ac.th",
+            "Teacher_Phone": "-"
+            }
+        ]
+    }
+}

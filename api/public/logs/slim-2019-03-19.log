@@ -1,0 +1,5 @@
+[2019-03-19 06:35:39] slim.DEBUG: Using token from environment [] []
+[2019-03-19 06:35:39] slim.WARNING: Expired token ["eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI2NjYxNjEsImV4cCI6MTU1MjY3MzM2MSwianRpIjoiN0pBTnJSTDExQmZZVnM2THBlN3IxUSIsInN1YiI6ImJ1dV9wcm9maWxlIn0.gEMJ9RxzcJ1aLD8X9u0127J5rUa3Gx81oIuyJWn0tH8"] []
+[2019-03-19 06:35:45] slim.WARNING: Token not found [] []
+[2019-03-19 06:36:10] slim.DEBUG: Using token from environment [] []
+[2019-03-19 06:38:44] slim.DEBUG: Using token from environment [] []
