@@ -3,10 +3,30 @@ session_start();
 header("Cache-control: private");
 ini_set('memory_limit', '-1');
 ?>
+
 <html>
 <link href="http://mottie.github.io/tablesorter/css/theme.default.css" rel="stylesheet">
+
   <script type="text/javascript" src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script>
 <style>
+
+fieldset.suggestion {
+    border: 1px groove #ddd !important;
+    padding: 0px 1.4em 1.4em 1.4em !important;
+    margin: 35px 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.suggestion {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
+	
 #div1 {
     float:left;
     width:100px;
@@ -166,16 +186,21 @@ td.left {
     <div class="card-body">    
 	<div class="container">  
     <div class="row">
-	
+		<fieldset class="suggestion"><legend class="suggestion"><b>คำแนะนำ</b></legend>
+1. ตัวอย่างการกรอกรหัสนิสิต เช่น 58160397 , 5816* และสามารถใส่เครื่องหมาย , คั่นระหว่างรหัสนิสิตได้ เช่น 5816*,5716*<br />
+2. ตัวอย่างการกรอกรหัสวิชา เช่น 887250 , 887* และสามารถใส่เครื่องหมาย , คั่นระหว่างรหัสวิชาได้ เช่น 886*,887*<br />
+</fieldset>
 	
 		<form id= "getSubjectStudents" action="<?php echo site_url("admin/c_admin/getSubjectStudent/")?>" method ="post">
-        <br><br><br><br>
+        <br><br>
 		<div class="form-group">
-      <label for="student_id">รหัสนิสิต :</label>
-      <input type="text" class="form-control" id="student_id" required name="student_id" >
+      <label for="student_id">รหัสนิสิต : </label>
+      <input type="text" class="form-control" id="student_id" required name="student_id">
+
     </div>
     <div class="form-group">
       <label for="subject_code">รหัสวิชา :</label>
+      
       <input type="text" class="form-control" id="subject_code" required name="subject_code"  >
     </div>
 
@@ -209,8 +234,12 @@ td.left {
 
 		</form>
 		
-		<br />
+		
+		
 		</div>
+
+		
+		
 		</div>
 		</div>
 		</div>

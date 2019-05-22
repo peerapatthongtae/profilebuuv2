@@ -20,6 +20,7 @@
 		                    </ul>
                     </li>
                     <li><a href="/student/c_student/graduate_actorstudent"><i class="fa fa-graduation-cap"></i> ผู้สำเร็จการศึกษา </a></li>
+                    <li><a href="https://tinyurl.com/y2wxxqqj"><i class="far fa-address-book"></i> คู่มือการใช้งานสำหรับนิสิต</a></li>
                    
           </ul>
         </nav>

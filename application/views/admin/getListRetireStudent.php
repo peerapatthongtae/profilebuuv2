@@ -58,15 +58,7 @@ th {
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-
-              <h1><strong>
-              <?php if($retireyear == "morethanfouryear") { ?>
-                <center><?php echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่พ้นสภาพในขณะอยู่ปี 4 ขึ้นไป "; 
-              } else { ?>
-              <center><?php echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่พ้นสภาพในปีการศึกษา ".$retireyear; 
-              } ?>
-              </strong></h1>
-
+              <h1><strong><center><?php echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่พ้นสภาพในปีการศึกษา ".$retireyear ?></strong></h1>
             </div>
             <div class="card-body">
 

@@ -5,6 +5,22 @@ ini_set('memory_limit', '2048M');
 ?>
 <html>
 <style>
+  fieldset.suggestion {
+    border: 1px groove #ddd !important;
+    padding: 0px 1.4em 1.4em 1.4em !important;
+    margin: 35px 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.suggestion {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
 thead{background-color:lightblue}
 thead tr th{cursor:pointer}
 thead tr th:hover{background-color:#cccccc}
@@ -149,7 +165,12 @@ td.left {
 	
 	
 		<form id= "getProStudent" action="<?php echo site_url("admin/c_admin/getProStudent/")?>" method ="post">
-        <br><br><br><br>
+        <br>
+        <fieldset class="suggestion"><legend class="suggestion"><b>คำแนะนำ</b></legend>
+ตัวอย่างการกรอกรหัสนิสิต เช่น 58160397 , 5816* และสามารถใส่เครื่องหมาย , คั่นระหว่างรหัสนิสิตได้ เช่น 5816*,5716*
+
+</fieldset>
+<br><br>
 		<div class="form-group">
       <label for="student_id">รหัสนิสิต :</label>
       <input type="text" class="form-control" id="student_id" name="student_id"  required>
@@ -210,6 +231,7 @@ td.left {
 		</form>
 		
 		<br />
+    
 		</div>
 		</div>
 		</div>
@@ -253,11 +275,54 @@ td.left {
 		</tr>
         </thead>
         <tbody>
-        <?php foreach ($resultstudent as  $row) { ?>
+        <?php foreach ($resultstudent as  $row) { 
                         
-                        <tr>
+                        if(strpos($row->Pro_Name, 'ครั้งที่ ') !== false) {
+          echo "<tr bgcolor=#FFFFCC>";
+           }  else {
+             echo "<tr>";
+           } ?>
                           
-                        
+                        <?php if(strpos($row->Pro_Name, 'ครั้งที่ 1') !== false) { ?>
+                        	<td width="10%" align="CENTER"><font color = "LightSalmon"><?php echo $row->Student_ID ?></font> </td>
+                          <td align="CENTER"><font color = "LightSalmon"><?php echo $row->Full_Name ?></font>  </td>
+                          <td align="CENTER"><font color = "LightSalmon"><?php echo $row->Course ?></font>  </td>
+                          <td align="CENTER"><font color = "LightSalmon"><?php echo $row->Status_Name ?></font>  </td>
+                          <td align="CENTER"><font color = "LightSalmon"><?php echo $row->Pro_Name ?></font>  </td>
+                          <td>
+                          	<?php 
+                          echo "<a href='".site_url('admin/c_admin/detail_pro_student/'.$row->Student_ID)."'>";
+              echo "<button type='submit' class='btn btn-primary btn-sm'>"."ประวัติการพินิจ"."</button>";
+              echo "</a> "; ?>
+                          </td> 
+                         <?php } else if(strpos($row->Pro_Name, 'ครั้งที่ 2') !== false) { ?>
+                         	<td width="10%" align="CENTER"><font color = "red"><?php echo $row->Student_ID ?></font> </td>
+                          <td align="CENTER"><font color = "red"><?php echo $row->Full_Name ?></font>  </td>
+                          <td align="CENTER"><font color = "red"><?php echo $row->Course ?></font>  </td>
+                          <td align="CENTER"><font color = "red"><?php echo $row->Status_Name ?></font>  </td>
+                          <td align="CENTER"><font color = "red"><?php echo $row->Pro_Name ?></font>  </td>
+                          <td>
+                          	<?php 
+                          echo "<a href='".site_url('admin/c_admin/detail_pro_student/'.$row->Student_ID)."'>";
+              echo "<button type='submit' class='btn btn-primary btn-sm'>"."ประวัติการพินิจ"."</button>";
+              echo "</a> "; ?>
+                          </td> 
+
+                        <?php } else if(strpos($row->Pro_Name, 'ครั้งที่ 3') !== false) { ?>
+
+                        	<td width="10%" align="CENTER"><b><font color = "red"><?php echo $row->Student_ID ?></font></b> </td>
+                          <td align="CENTER"><b><font color = "red"><?php echo $row->Full_Name ?></font></b>  </td>
+                          <td align="CENTER"><b><font color = "red"><?php echo $row->Course ?></font></b>  </td>
+                          <td align="CENTER"><b><font color = "red"><?php echo $row->Status_Name ?></font></b>  </td>
+                          <td align="CENTER"><b><font color = "red"><?php echo $row->Pro_Name ?></font></b>  </td>
+                          <td>
+                          	<?php 
+                          echo "<a href='".site_url('admin/c_admin/detail_pro_student/'.$row->Student_ID)."'>";
+              echo "<button type='submit' class='btn btn-primary btn-sm'>"."ประวัติการพินิจ"."</button>";
+              echo "</a> "; ?>
+                          </td> 
+
+                       <?php } else  { ?>
                           <td width="10%" align="CENTER"><?php echo $row->Student_ID ?> </td>
                           <td align="CENTER"><?php echo $row->Full_Name ?> </td>
                           <td align="CENTER"><?php echo $row->Course ?> </td>
@@ -269,6 +334,7 @@ td.left {
               echo "<button type='submit' class='btn btn-primary btn-sm'>"."ประวัติการพินิจ"."</button>";
               echo "</a> "; ?>
                           </td>
+                      <?php } ?>
 
                           </tr>
         <?php } ?>

@@ -6,6 +6,22 @@ header("Cache-control: private");
 <html>
 <style>
 
+fieldset.suggestion {
+    border: 1px groove #ddd !important;
+    padding: 0px 1.4em 1.4em 1.4em !important;
+    margin: 35px 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.suggestion {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
 table {
     width:100%;
     
@@ -136,8 +152,11 @@ td.left {
 	
 	
 		<form id="getAmountSubjectStudent" action="<?php echo site_url("admin/c_admin/getAmountSubjectStudent/")?>" method ="post">
-        <br><br><br><br>
-		
+        <br><br>
+		  <fieldset class="suggestion"><legend class="suggestion"><b>คำแนะนำ</legend>
+ไม่สามารถกรอกรหัสวิชาที่มีเครื่องหมาย * ได้
+</b></fieldset>
+<br><br>
 
         <div class="form-group">
       <label for="subject_code">รหัสวิชา :</label>
@@ -173,8 +192,11 @@ td.left {
 
 		</form>
 		
-		<br />
+		
+    
 		</div>
+    
+    
 		</div>
 		</div>
 		</div>

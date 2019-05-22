@@ -20,7 +20,7 @@
     <!-- Google fonts - Poppins -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="<?php echo base_url('theme/css/style.default.css" id="theme-stylesheet');?>">
+    <link rel="stylesheet" href="<?php echo base_url('theme/css/style.blue.css" id="theme-stylesheet');?>">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="<?php echo base_url('theme/css/custom.css');?>">
     
@@ -46,7 +46,7 @@
                     <li><a href="<?php echo site_url('/user/c_user/scholarship_student_user');?>"><i class="far fa-money-bill-alt"></i> ทุนการศึกษา </a></li>
                     <li><a href="<?php echo site_url('/welcome/graduate');?>"><i class="fa fa-graduation-cap"></i> ผู้สำเร็จการศึกษา </a></li>
                     <li><a href="<?php echo site_url('/user/c_user/manipulator');?>"><i class="fa fa-user"></i> ข้อมูลผู้จัดทำ </a></li>
-                    <li><a href="https://docs.google.com/document/d/1tJT3SYH61U-xbNQMS7JvhxxpVwSLyDYmY7reNxhk9jw/edit?fbclid=IwAR27nhkuTDGJyVHcfwpSuSROAu4s2jULbkIEIQ0GVKUBZIQg04Gn_Lor4_Q"><i class="fa fa-graduation-cap"></i>คู่มือการใช้งาน</a></li>
+                    <li><a href="https://tinyurl.com/y4dfyx44"><i class="far fa-address-book"></i> คู่มือการใช้งานสำหรับผู้ใช้ทั่วไป</a></li>
                     
                     
                     

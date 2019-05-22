@@ -1,4 +1,4 @@
-<style>
+﻿<style>
 meta name="viewport" content="width=device-width, initial-scale=1">
     ul.breadcrumb {
         padding: 10px 16px;
@@ -42,7 +42,7 @@ meta name="viewport" content="width=device-width, initial-scale=1">
           <div class="card">
             <div class="card-header">
               <h1><strong><center>เพิ่มข้อมูลการลงทะเบียน (เกรดตามรายวิชา)</strong></h1>
-              <?php echo $_SERVER['REQUEST_URI'] ?>
+              
             </div>  
     
   <form role="form" action="<?php echo site_url('admin/c_admin/post_registstudent');?>" method="post" enctype="multipart/form-data" id="file_input">

@@ -28,6 +28,7 @@
 		                    </ul>
                     </li>
                     <li><a href="/teacher/c_teacher/graduate_actorteacher"><i class="fa fa-graduation-cap"></i> ผู้สำเร็จการศึกษา </a></li>
+                    <li><a href="https://tinyurl.com/y6tzhz6b"><i class="far fa-address-book"></i> คู่มือการใช้งานสำหรับอาจารย์</a></li>
           </ul>
         </nav>
 

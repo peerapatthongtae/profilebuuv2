@@ -1425,28 +1425,7 @@ class C_admin extends CI_Controller {
 
 			$data['allstatus'] = $this->m_student->getAllStatus();
 			
-			/*$data['status_10'] = $this->m_student->get_status_10_aa($yearspost,$course);
-			$data['status_11'] = $this->m_student->get_status_11_aa($yearspost,$course);
-			$data['status_12'] = $this->m_student->get_status_12_aa($yearspost,$course);
-			$data['status_40'] = $this->m_student->get_status_40_aa($yearspost,$course);
-			$data['status_45'] = $this->m_student->get_status_45_aa($yearspost,$course);
-			$data['status_50'] = $this->m_student->get_status_50_aa($yearspost,$course);
-			$data['status_51'] = $this->m_student->get_status_51_aa($yearspost,$course);
-			$data['status_52'] = $this->m_student->get_status_52_aa($yearspost,$course);
-			$data['status_53'] = $this->m_student->get_status_53_aa($yearspost,$course);
-			$data['status_60'] = $this->m_student->get_status_60_aa($yearspost,$course);
-			$data['status_61'] = $this->m_student->get_status_61_aa($yearspost,$course);
-			$data['status_62'] = $this->m_student->get_status_62_aa($yearspost,$course);
-			$data['status_63'] = $this->m_student->get_status_63_aa($yearspost,$course);
-			$data['status_64'] = $this->m_student->get_status_64_aa($yearspost,$course);
-			$data['status_65'] = $this->m_student->get_status_65_aa($yearspost,$course);
-			$data['status_68'] = $this->m_student->get_status_68_aa($yearspost,$course);
-			$data['status_69'] = $this->m_student->get_status_69_aa($yearspost,$course);
-			$data['status_80'] = $this->m_student->get_status_80_aa($yearspost,$course);
-			$data['status_81'] = $this->m_student->get_status_81_aa($yearspost,$course);
-			$data['status_82'] = $this->m_student->get_status_82_aa($yearspost,$course);
-			$data['status_83'] = $this->m_student->get_status_83_aa($yearspost,$course);
-			$data['status_90'] = $this->m_student->get_status_90_aa($yearspost,$course);*/
+			
 
 			foreach($data['allstatus'] as $allstatus) {
 			$data['status'][$allstatus->Status_ID] = $this->m_student->get_status($allstatus->Status_ID,$yearspost,$course);
@@ -1658,7 +1637,7 @@ class C_admin extends CI_Controller {
 			} else if($Entry_Method == 'รับตรงครั้งที่1') {
 				$sqlEntry_Method = "29:รับตรง 12 จังหวัด|54:รับตรงทั่วประเทศ";
 			} else if($Entry_Method == 'รับตรงครั้งที่2') {
-				$sqlEntry_Method = "29.1:รับตรง 12 จังหวัด รอบ 2|54.1:รับตรงทั่วประเทศ รอบ 2|60:รับตรง|60.1:รับตรง รอบ 2";
+				$sqlEntry_Method = "29.1:รับตรง 12 จังหวัด รอบ 2|54.1:รับตรงทั่วประเทศ รอบ 2|60:รับตรง|60.1:รับตรง รอบ 2|การคัดเลือก";
 			} else if($Entry_Method == 'Admission') {
 				$sqlEntry_Method = "Admission";
 			}

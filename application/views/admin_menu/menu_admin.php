@@ -65,7 +65,7 @@
 		                    </ul>
                     </li>
                     <li><a href="/admin/c_admin/graduate_actoradmin"><i class="fa fa-graduation-cap"></i> ผู้สำเร็จการศึกษา </a></li>
-                    <li><a href="https://docs.google.com/document/d/1tJT3SYH61U-xbNQMS7JvhxxpVwSLyDYmY7reNxhk9jw/edit?fbclid=IwAR27nhkuTDGJyVHcfwpSuSROAu4s2jULbkIEIQ0GVKUBZIQg04Gn_Lor4_Q"><i class="fa fa-graduation-cap"></i>คู่มือการใช้งาน</a></li>
+                    <li><a href="https://docs.google.com/document/d/1tJT3SYH61U-xbNQMS7JvhxxpVwSLyDYmY7reNxhk9jw/edit?fbclid=IwAR27nhkuTDGJyVHcfwpSuSROAu4s2jULbkIEIQ0GVKUBZIQg04Gn_Lor4_Q"><i class="far fa-address-book"></i> คู่มือการใช้งานสำหรับเจ้าหน้าที่</a></li>
                     <!--<li><a href="#exampledropdownDropdown4" aria-expanded="false" data-toggle="collapse"> 
                       <i class="far fa-plus-square"></i> API</a>
 		                    <ul id="exampledropdownDropdown4" class="collapse list-unstyled ">

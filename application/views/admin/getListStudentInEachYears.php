@@ -47,11 +47,7 @@ th {
             <ul class="breadcrumb">
             <li><a href="<?php echo site_url('admin/c_admin/menu_admin');?>">หน้าหลัก</a></li>
             
-                <li><?php if($Entry_Years == "morethanfouryear") {
-                echo "รายชื่อนิสิตสาขา".$branch." ปี 4 ขึ้นไป ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year ;
-              } else {
-              echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year;
-              } ?></li>
+                <li><?php echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year ?></li>
        
             </ul>
             </div>
@@ -62,14 +58,7 @@ th {
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-              <h1><strong><center>
-              
-              <?php if($Entry_Years == "morethanfouryear") {
-                echo "รายชื่อนิสิตสาขา".$branch." ปี 4 ขึ้นไป ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year ;
-              } else {
-              echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year;
-              } ?>
-              </strong></h1>
+              <h1><strong><center><?php echo "รายชื่อนิสิตสาขา".$branch." รหัส ".$Entry_Years." ที่ลงทะเบียนในเทอม ".$term ." ปีการศึกษา ".$Subject_Year ?></strong></h1>
             </div>
             <div class="card-body">
 
